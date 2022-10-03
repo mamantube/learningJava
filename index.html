@@ -19,8 +19,26 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Hitung Gaji Karyawan</h2>
     <script>
-     
+     let jamKerja = 8;
+     let gapok = 2000000;
+     let lembur = 25000;
+
+     namaKaryawan = prompt ("Nama Pegawai")
+     jamMasuk = prompt ("Jam Masuk : ", "08:00")
+     jamkeluar = prompt ("Jam Keluar : ", "16:00")
+     jamLembur = jamkeluar-eval (jamMasuk)-eval (jamKerja)
+     gaji = gapok
+
+     if (jamLembur > 0) gaji=gaji+jamLembur*lembur
+
+     document.write("Nama Karyawan : "+namaKaryawan )
+     document.write("Jam Masuk : "+jamMasuk)
+     document.write("Jam Keluar : "+jamkeluar)
+     document.write("Lembur : "+jamLembur+" Jam")
+     document.write("Gaji : "+gaji);
+
     </script>
 </body>
 </html>
